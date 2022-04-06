@@ -68,7 +68,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 150px;
             padding: 0px 50px 0px 50px;
     }
 

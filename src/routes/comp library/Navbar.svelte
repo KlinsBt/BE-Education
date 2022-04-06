@@ -519,9 +519,11 @@ background-color: rgba(134, 134, 134, 0.8);
 
   .menu-section {
     display: flex !important;
+    top: 0 !important;
     height: 0vh;
+    background-color: #d6b18c;
     color: rgb(0, 0, 0);
-    animation: backwards 0.5s ease !important;
+    animation: collapse 0.5s ease !important;
   }
 
 }
