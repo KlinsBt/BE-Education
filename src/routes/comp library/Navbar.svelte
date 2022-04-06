@@ -1,0 +1,504 @@
+<script>
+
+/////////////// Language Container ///////////////////////////////////////
+
+let showLang = false; 
+
+const toggleLang = () => {
+  if (!showLang) {
+    showLang = true
+  } 
+  else {
+    showLang = false
+  }
+}
+
+let lng = 0
+
+const languages = [
+  {name: "ENG", flag: "/img/flags/us.png", id: 0},
+  {name: "GER", flag: "/img/flags/de.png", id: 1},
+  {name: "ESP", flag: "/img/flags/esp.png", id: 2}
+]
+    
+const selectLanguage = (id) => {
+  lng = id
+}
+
+/////////////// Language Container End ///////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+/////////////// Collapsed Menu ///////////////////////////////////////////
+
+let menuBar = "menu-btn"
+let menuDiv = "menu-section"
+let col = "col-list-hidden"
+
+const toggleMenu = () => {
+  if (menuBar === "menu-btn") {
+    menuBar = "menu-btn open"
+    menuDiv = "" + "ms-open"
+    col = "col-list"
+  }
+  else {
+    menuBar = "menu-btn"
+    menuDiv = "" + "menu-section"
+    col = "col-list-hidden"
+  }
+}
+
+/////////////// Collapsed Menu End ///////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+/////////////// Scroll Detection ///////////////////////////////////////////
+
+let navbar
+let menuDivSticky
+let y
+
+const stickToTop = () => {
+    if (y > 20) {
+      navbar = "sticky"
+      menuDivSticky = "sticky-2"
+    }
+    else {
+      navbar = ""
+      menuDivSticky = ""
+    }
+}
+
+/////////////// Scroll Detection End ///////////////////////////////////////
+
+</script>
+
+<svelte:window on:scroll={stickToTop} bind:scrollY={y} />
+
+<main>
+	<nav class="{navbar}">
+
+        <div class="nav-container-left">
+            <img class="logo" src="img/icons/Wordpress Transparent.png" alt="Berndt Education">
+            <p class="logo-text">Berndt Education</p>
+        </div>
+
+        <div class="nav-container-middle">
+            <ul id="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/courses">Individual Courses</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+
+    <!---------- Collapsed Menu 1 -------------->
+
+          <div on:click={toggleMenu} class={menuBar}>
+            <div class="menu-btn__burger"></div>
+          </div>
+
+    <!---------- Collapsed Menu 1 End ---------->
+
+        </div>
+        <div class="nav-container-right">
+          <div id="select-language" on:click={toggleLang}>
+              <img id="flag" src={languages[lng].flag} alt="">
+              <p id="selected-language">{languages[lng].name}</p>
+          </div>
+          {#if showLang}
+          <ul id="language-container">
+            {#each languages as language (language.id)}
+              <li on:click={() => selectLanguage(language.id)} on:click={toggleLang}>{language.name}</li>
+            {/each}
+          </ul>
+          {/if}
+        </div>
+
+      </nav>
+
+    <!---------- Collapsed Menu 2 ------------->
+      <section class="{menuDiv} {menuDivSticky}">
+        <ul id={col} >
+          <li><a href="/">Home</a></li>
+          <li><a href="/courses">Individual Courses</a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </section>
+    <!---------- Collapsed Menu 2 End ---------->
+
+</main>
+
+<style>
+
+/*---------- Navigation Bar ------------------------------------------------------*/
+
+@media (min-width: 100px) and (max-width: 270px) {
+
+  nav {
+      display: flex;
+      justify-content: center !important;
+  }
+
+  .nav-container-left {
+      display: none !important;
+  }
+
+  .nav-container-right {
+      display: none !important;
+  }    
+}
+
+@media (min-width: 270px) and (max-width: 470px) {
+
+  nav {
+      display: flex;
+      justify-content: center !important;
+  }
+
+  .nav-container-left {
+      display: none !important;
+  }
+
+  .nav-container-right {
+      display: none !important;
+  }  
+}
+
+  @media only screen and (min-width: 800px) {
+  .menu-section {
+      display: none !important;
+  } 
+}
+
+@media (min-width: 270px) and (min-width: 471px) and (max-width: 541px) {
+
+  nav {
+      display: flex;
+  }
+
+  .nav-container-left > p {
+    visibility: hidden !important;
+  }
+ 
+}
+
+/*----------------------------------------------------------------*/
+
+nav {
+/*background-color: #1c1d25;*/
+background-color: #d6b18c;
+display: flex;
+justify-content: space-between;
+height: 100px;
+border-bottom: 1px solid white;
+z-index: 3;
+}
+
+.sticky {
+position: fixed !important;
+top: 0 !important;
+width: 100% !important;
+}
+
+.sticky-2 {
+position: fixed !important;
+top: 88px !important;
+width: 100% !important;
+}
+
+.nav-alt {
+height: 20vh;
+}
+
+.nav-container-left, .nav-container-middle, .nav-container-right {
+align-items: center;
+justify-content: center;
+}
+
+.nav-container-left {
+padding: 0px 0px 10px 15px;
+}
+
+.logo {
+padding: 1px;
+height: 60px;
+margin: 10px;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+
+.logo-text {
+font-size: 12px;
+color: rgb(0, 0, 0);
+font-weight: 400;
+margin-top: -15px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+
+  .menu-section {
+      display: none;
+  }
+
+  .ms-open {
+      display: none;
+  }
+
+  .nav-container-middle {
+      padding-top: 15px;
+
+  }
+
+  .nav-container-middle > ul {
+      display: flex;
+      list-style-type: none;
+      width: 600px;
+      justify-content: space-around;
+      font-size: 20px;
+      margin-left: -70px;
+  }
+
+  #nav-list > li > a {
+      color: black;
+      font-weight: 500;
+  }
+
+  #nav-list > li > a:hover {
+      color: #ffffff;
+  }
+
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+.nav-container-right {
+visibility: visible;
+align-items: center;
+justify-content: center;
+padding: 35px 40px;
+}
+
+#select-language {
+display: unset;
+cursor: pointer;
+width: 10px;
+height: 10px;
+padding: 3px 10px;
+background-color: rgba(255, 255, 255, 0.5);
+box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.25);
+border-radius: 15px;
+}
+
+#select-language:hover {
+background-color: rgba(134, 134, 134, 0.8);
+}
+
+#select-language:active {
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+#flag {
+height: 15px;
+width: 20px;
+margin-top: 0px;
+}
+
+#select-language > p {
+display: inline-block;
+color: #000000;
+font-size: 19px;
+font-weight: 600;
+}
+#language-container {
+visibility: visible;
+background-color: rgb(224, 224, 224);
+box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+padding: 0px;
+font-size: 15px;
+color: rgb(0, 0, 0);
+}
+
+#language-container > li  {
+padding: 5px 25px;
+text-decoration: none;
+list-style: none;
+cursor: pointer;
+}
+
+#language-container > li:nth-child(1) {
+border-radius: 15px 15px 0px 0px;
+}
+
+#language-container > li:nth-child(3) {
+border-radius: 0px 0px 15px 15px;
+}
+
+#language-container > li:hover {
+background-color: rgba(134, 134, 134, 0.8);
+}
+
+/*---------- Navigation Bar End------------------------------------------------------*/
+
+
+/*---------- Collapsed Navigation Bar ------------------------------------------------------*/
+
+/*---------- Collapsed Navigation Keyframes -----------------------------------------------------------*/
+
+@media only screen and (max-width: 875px) {
+
+#nav-list {
+    display: none;
+}
+    
+@keyframes expand {
+    from {height: 0px;}
+    to {height: 150px;}
+  }
+
+@keyframes collapse {
+    from {height: 150px;}
+    to {height: 0px;}
+  }
+
+@keyframes shrink {
+    from {height: 23px;}
+    to {height: 0px;}
+  }
+
+@keyframes grow {
+    from {font-size: 0px;}
+    to {font-size: 23px;}
+  }
+
+/*---------- Collapsed Navigation Keyframes End ------------------------------------------------------*/
+
+#col-list > li > a {
+    color: #000000;
+}
+
+#col-list > li:hover a { 
+    color: #ffffff;
+}
+
+#col-list {
+    font-size: 23px;
+    text-decoration: none;
+    list-style-type: none;
+    animation: grow 0.5s ease !important;
+}
+
+#col-list-hidden {
+    font-size: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    animation: shrink 0.5s linear !important;
+}
+
+.menu-section {
+    display: flex !important;
+    height: 0vh;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #1c1d25;*/
+    background-color: #d6b18c;
+    color: rgb(0, 0, 0);
+    animation: collapse 0.25s cubic-bezier(0, 0, 0.1, 0.1) !important;
+}
+
+.ms-open {
+    display: flex !important;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #1c1d25;*/
+    background-color: #d6b18c;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+    animation: expand 0.5s ease !important;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+
+  .menu-btn:hover .menu-btn__burger {
+    background-color: #ffffff
+  }
+
+  .menu-btn:hover .menu-btn__burger::before {
+    background-color: #ffffff
+  }
+
+  .menu-btn:hover .menu-btn__burger::after {
+    background-color: #ffffff
+  }
+
+  .menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+}
+
+/*---------- Collapsed Navigation Bar End---------------------------------------------------*/
+
+</style>
