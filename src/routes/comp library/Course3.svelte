@@ -101,7 +101,8 @@
     }
 
     .bgr {
-        background-image: url("img/flags/ger.png");
+        background: rgb(5,6,8);
+        background: linear-gradient(100deg, rgba(5,6,8,1) 0%, rgba(222,31,38,0.8547794117647058) 55%, rgba(252,206,8,1) 100%);
         background-size:cover;
         background-repeat:no-repeat;
         background-position:center center;
