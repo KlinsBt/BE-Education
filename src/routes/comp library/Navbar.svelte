@@ -17,7 +17,7 @@ let lng = 0
 
 const languages = [
   {name: "ENG", flag: "/img/flags/us.png", id: 0},
-  {name: "GER", flag: "/img/flags/de.png", id: 1},
+  {name: "GER", flag: "/img/flags/ger.png", id: 1},
   {name: "ESP", flag: "/img/flags/esp.png", id: 2}
 ]
     
@@ -185,7 +185,7 @@ const stickToTop = () => {
   } 
 }
 
-@media (min-width: 270px) and (min-width: 471px) and (max-width: 541px) {
+@media only screen and (min-width: 471px) and (max-width: 541px) {
 
   nav {
       display: flex;
@@ -221,9 +221,7 @@ top: 88px !important;
 width: 100% !important;
 }
 
-.nav-alt {
-height: 20vh;
-}
+
 
 .nav-container-left, .nav-container-middle, .nav-container-right {
 align-items: center;
@@ -364,26 +362,26 @@ background-color: rgba(134, 134, 134, 0.8);
 
 @media only screen and (max-width: 875px) {
 
-#nav-list {
-    display: none;
-}
+  #nav-list {
+      display: none;
+  }
     
-@keyframes expand {
+  @keyframes expand {
     from {height: 0px;}
     to {height: 150px;}
   }
 
-@keyframes collapse {
+  @keyframes collapse {
     from {height: 150px;}
     to {height: 0px;}
   }
 
-@keyframes shrink {
+  @keyframes shrink {
     from {height: 23px;}
     to {height: 0px;}
   }
 
-@keyframes grow {
+  @keyframes grow {
     from {font-size: 0px;}
     to {font-size: 23px;}
   }
@@ -498,6 +496,40 @@ background-color: rgba(134, 134, 134, 0.8);
   }
 
 }
+
+/*
+@media only screen and (max-width: 450px) {
+
+  nav {
+    /*background-color: #1c1d25;*/
+   /* background-color: #d6b18c;
+    display: flex;
+    justify-content: space-between;
+    height: 70px !important;
+    border-bottom: 1px solid white;
+    z-index: 3;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+  }*/
+/*
+  .ms-open {
+    display: flex !important;
+    height: 150px !important;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #1c1d25;*/
+  /*  background-color: #d6b18c;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+    animation: expand 0.5s ease !important;
+    position: fixed !important;
+    top: 70px !important;
+    width: 100% !important;
+  }
+
+}
+*/
 
 /*---------- Collapsed Navigation Bar End---------------------------------------------------*/
 

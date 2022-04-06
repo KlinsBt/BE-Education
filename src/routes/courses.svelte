@@ -3,7 +3,7 @@
     import Navbar from "./comp library/Navbar.svelte";
     import Header from "./comp library/Header.svelte";
     import Footer from "./comp library/Footer.svelte";
-    import Course from "./comp library/Course.svelte";
+    import Course from "./comp library/Course3.svelte";
     import "../styles/global.css";
     
 </script>
@@ -25,12 +25,9 @@
         </div>
 
         <div class="sub-title">
-            <p>Please do get in touch for a free 15 minute consultation meeting.
-            <br/>We are happy to help you.</p>
-        </div>
+            <p>Here you can see our course catalog.</p>
+                </div>
         <div class="boxes">
-            <Course />
-            <Course />
             <Course />
         </div>
         <Footer />
@@ -55,9 +52,11 @@
     }
 
     .boxes {
-    margin: 100px 0px 50px 0px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+        margin: 100px 0px 50px 0px;
+        display: flex;
+        justify-content: center;
+        /*display: grid;
+        grid-template-columns: auto auto auto;*/
     }
     
     .title {

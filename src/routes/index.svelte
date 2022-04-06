@@ -205,7 +205,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 10px !important;
-            margin-top: -17px !important;
+            margin-top: 0px !important;
             height: 400px !important;
         }
     
@@ -294,7 +294,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 10px !important;
-            margin-top: -17px !important;
+            margin-top: 0px !important;
             height: 50vh !important;
         }
     
@@ -371,7 +371,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 10px !important;
-            margin-top: -17px !important;
+            margin-top: 0px !important;
             height: 500px !important;
         }
     
@@ -490,7 +490,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 10px !important;
-            margin-top: -17px !important;
+            margin-top: 0px !important;
             height: 500px !important;
         }
     
