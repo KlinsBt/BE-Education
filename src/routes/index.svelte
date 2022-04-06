@@ -384,7 +384,7 @@
         }
     
         :global(#col-list > li)  {
-            font-size: 16px !important;
+            font-size: 21px !important;
         }
     
         .sec-1 > div > div > h2 {
@@ -551,6 +551,14 @@
             font-size: 30px !important;
         }
     
+    }
+
+    @media only screen and (max-width: 450px) {
+    
+        .sec-1 {
+            margin-top: 50px !important;
+        }
+
     }
     
     @media (min-width: 450px) and (max-width: 540px) {

@@ -497,39 +497,35 @@ background-color: rgba(134, 134, 134, 0.8);
 
 }
 
-/*
+
 @media only screen and (max-width: 450px) {
 
   nav {
     /*background-color: #1c1d25;*/
-   /* background-color: #d6b18c;
     display: flex;
     justify-content: space-between;
     height: 70px !important;
-    border-bottom: 1px solid white;
-    z-index: 3;
     position: fixed !important;
     top: 0 !important;
     width: 100% !important;
-  }*/
-/*
+  }
+
   .ms-open {
-    display: flex !important;
-    height: 150px !important;
-    justify-content: center;
-    align-items: center;
-    /*background-color: #1c1d25;*/
-  /*  background-color: #d6b18c;
-    color: rgb(0, 0, 0);
-    z-index: 3;
     animation: expand 0.5s ease !important;
     position: fixed !important;
     top: 70px !important;
     width: 100% !important;
   }
 
+  .menu-section {
+    display: flex !important;
+    height: 0vh;
+    color: rgb(0, 0, 0);
+    animation: backwards 0.5s ease !important;
+  }
+
 }
-*/
+
 
 /*---------- Collapsed Navigation Bar End---------------------------------------------------*/
 
