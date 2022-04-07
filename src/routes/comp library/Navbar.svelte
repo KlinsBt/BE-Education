@@ -314,7 +314,7 @@ background-color: rgba(0, 0, 0, 0.7);
 
 #flag {
 height: 15px;
-width: 20px;
+width: 17px;
 margin-top: 0px;
 }
 

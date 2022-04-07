@@ -71,6 +71,7 @@
         border-radius: 15px;
         border: none;
         box-shadow: 0 0 15px rgb(122, 122, 122);
+        background-color: white;
         /* background-color: gray; */
     }
         

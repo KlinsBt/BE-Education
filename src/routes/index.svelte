@@ -26,12 +26,13 @@
                 <h2>EDUCATION OPENS DOORS</h2>
               </div>
               <div><img id="main-logo" src="/img/icons/Wordpress Transparent.png" alt="Main-Logo"></div>
-                <h3 id="descr-1">The method for successful learning</h3>
-                <p id="descr-2">With Berndt Education, your company benefits from an engaging learning concept 
-                    which exploits interconnectedness via media in conjunction with classic learning methods.</p>
+                <h3 id="descr-1">With Berndt Education you'll be ahead</h3>
+                <p id="descr-2">We offer personalized language courses for everyone,
+                     creating the ideal conditions for you to learn languages as quickly and effectively as possible.</p>
             </div>
           <div class="first-area">
-                <p>Get in contact!</p>
+                <!---<p>Get in contact!</p>--->
+                <br/>
           </div>
     
           <div class="buttons">
@@ -899,6 +900,11 @@
         text-align: center;
         padding: 80px;
     }
+
+    #sub1 {
+        font-size: 20px;
+    }
+
      /*
     .headshot {
         width: 300px;

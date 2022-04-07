@@ -93,6 +93,7 @@
     .infos {
         text-align: center;
         border: 2px solid #5858585d;
+        background-color: white;
         color: #777;
         font-size: 14px;
         padding-left: 0;
