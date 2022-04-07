@@ -12,7 +12,7 @@
     <div class="card">
         <div class="circle">
             <div class="imgBox">
-                <img src="img/DennyProfil.jpg" alt="Profile">
+                <img src="img/DennyProfile.jpg" alt="Profile">
             </div>
         </div>
         <div class="content">
