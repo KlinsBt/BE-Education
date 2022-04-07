@@ -12,7 +12,7 @@
                                     <h3>BE German</h3>
                                 </li>
                                 <li>
-                                    <p>Learn German from home via Zoom qualified with<br/>
+                                    <p>Learn German from home via Zoom with qualified<br/>
                                        teachers and an engaging learning system.</p>
                                 </li>
                                 <li>Small groups of 7-10 students</li>
@@ -22,24 +22,24 @@
                                         <div class="time">
                                             <div>
                                                 <p>
-                                                6:15pm
+                                                8:30am
                                                 </p>
                                                 <p>
                                                 <span style="font-size: 14px; font-weight: 500">to</span>
                                                 </p>
                                                 <p>
-                                                9:15pm
+                                                11:30am
                                                 </p>
                                             </div>
                                             <div>
                                                 <p>
-                                                6:15pm
+                                                3pm
                                                 </p>
                                                 <p>
                                                 <span style="font-size: 14px; font-weight: 500">to</span>
                                                 </p>
                                                 <p>
-                                                9:15pm
+                                                6pm
                                                 </p>
                                             </div>
                                             <div>
@@ -97,6 +97,7 @@
         font-size: 14px;
         padding-left: 0;
         margin: 10px 20px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         border-radius: 15px;
     }
 

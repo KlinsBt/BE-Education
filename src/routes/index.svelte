@@ -35,8 +35,8 @@
           </div>
     
           <div class="buttons">
-            <div class="button-1"><a href="/courses">Get Started</a></div>
-            <div class="button-2"><a href="/courses">Our Courses </a></div>
+            <div class="button-1"><a href="/courses">Contact Us</a></div>
+            <div class="button-2"><a href="/courses">Our Courses</a></div>
           </div>
           <!----------
           <div class="socials">
