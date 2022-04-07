@@ -204,7 +204,7 @@
     @media (min-width: 100px) and (max-width: 300px) {
     
         .sec-1 {
-            padding: 30px 10px 0px 10px !important;
+            padding: 70px 10px 0px 10px !important;
             margin-top: 0px !important;
             height: 400px !important;
         }
@@ -293,7 +293,7 @@
     @media (min-width: 301px) and (max-width: 340px) {
     
         .sec-1 {
-            padding: 30px 10px 0px 10px !important;
+            padding: 70px 10px 0px 10px !important;
             margin-top: 0px !important;
             height: 50vh !important;
         }
@@ -370,7 +370,7 @@
     @media (min-width: 341px) and (max-width: 440px) {
     
         .sec-1 {
-            padding: 30px 10px 0px 10px !important;
+            padding: 85px 10px 0px 10px !important;
             margin-top: 0px !important;
             height: 500px !important;
         }
@@ -489,7 +489,7 @@
     @media (min-width: 441px) and (max-width: 540px) {
     
         .sec-1 {
-            padding: 30px 10px 0px 10px !important;
+            padding: 70px 10px 0px 10px !important;
             margin-top: 0px !important;
             height: 500px !important;
         }
@@ -561,7 +561,7 @@
 
     }
     
-    @media (min-width: 450px) and (max-width: 540px) {
+    @media (min-width: 451px) and (max-width: 540px) {
     
         .sec-1 {
             margin-top: 0px !important;

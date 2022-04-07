@@ -504,7 +504,7 @@ background-color: rgba(134, 134, 134, 0.8);
     /*background-color: #1c1d25;*/
     display: flex;
     justify-content: space-between;
-    height: 70px !important;
+    height: 80px !important;
     position: fixed !important;
     top: 0 !important;
     width: 100% !important;
