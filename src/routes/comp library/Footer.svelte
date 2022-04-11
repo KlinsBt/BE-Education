@@ -74,6 +74,9 @@ footer {
    margin: 20px 0px 0px 0px;
 }
 
+.contact > p:hover > a {
+    color: #d6b18c;
+}
 
 
 

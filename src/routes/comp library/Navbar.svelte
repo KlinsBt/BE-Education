@@ -20,9 +20,9 @@ const toggleLang = () => {
 let lng = 0
 
 const languages = [
-  {name: "ENG", flag: "/img/flags/us.png", id: 0},
-  {name: "GER", flag: "/img/flags/ger.png", id: 1},
-  {name: "ESP", flag: "/img/flags/esp.png", id: 2}
+  {name: "ENG", flag: "/img/flags/us.png", link: "/", id: 0},
+  {name: "GER", flag: "/img/flags/ger.png", link: "/", id: 1},
+  {name: "ESP", flag: "/img/flags/esp.png", link: "/", id: 2}
 ]
     
 const selectLanguage = (id) => {
@@ -126,7 +126,7 @@ const stickToTop = () => {
           {#if showLang}
           <ul id="language-container">
             {#each languages as language (language.id)}
-              <li on:click={() => selectLanguage(language.id)} on:click={toggleLang}>{language.name}</li>
+              <a href="{language.link}" on:click={() => selectLanguage(language.id)} on:click={toggleLang}><li>{language.name}</li></a>
             {/each}
           </ul>
           {/if}
@@ -340,22 +340,22 @@ font-size: 15px;
 color: rgb(0, 0, 0);
 }
 
-#language-container > li  {
+#language-container > a > li  {
 padding: 5px 25px;
 text-decoration: none;
 list-style: none;
 cursor: pointer;
 }
 
-#language-container > li:nth-child(1) {
-border-radius: 15px 15px 0px 0px;
+#language-container > a:nth-child(1) > li {
+border-radius: 15px 15px 0px 0px !important;
 }
 
-#language-container > li:nth-child(3) {
-border-radius: 0px 0px 15px 15px;
+#language-container > a:nth-child(3) > li {
+border-radius: 0px 0px 15px 15px !important;
 }
 
-#language-container > li:hover {
+#language-container > a:hover > li {
 background-color: rgba(134, 134, 134, 0.8);
 }
 

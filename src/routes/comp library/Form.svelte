@@ -18,11 +18,12 @@
 
   <div class="container">
     <h2>Write Us</h2>
-    <form action="">
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <input type="text" name="name" id="name" placeholder=" enter your name">
-        <textarea name="message" id="message" cols="35" rows="10" placeholder="Enter your message here"></textarea>
+    <form action="https://formsubmit.co/twnfut@gmail.com" method="post">
+        <input type="email" name="E-Mail" id="email" placeholder="Enter your email" required>
+        <input type="text" name="Name" id="name" placeholder=" enter your name" required>
+        <textarea name="Message" id="message" cols="35" rows="10" placeholder="Enter your message here"></textarea>
         <input type="submit" value="Send">
+    <!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">-->
     </form>
   </div>
            
