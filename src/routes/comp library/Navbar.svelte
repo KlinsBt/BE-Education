@@ -1,5 +1,9 @@
 <script>
 
+    import { fade, blur, fly, slide, scale } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
+import { transition_in } from "svelte/internal";
+
 /////////////// Language Container ///////////////////////////////////////
 
 let showLang = false; 
@@ -131,14 +135,15 @@ const stickToTop = () => {
       </nav>
 
     <!---------- Collapsed Menu 2 ------------->
-      <section class="{menuDiv} {menuDivSticky}">
-        <ul id={col} >
+    {#if menuDiv == "ms-open"}
+      <section transition:slide={{duration: 300}} class="{menuDiv} {menuDivSticky}">
+        <ul id={col} transition:slide={{duration: 300}}>
           <li><a href="/">Home</a></li>
           <li><a href="/courses">Individual Courses</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/contact">Contact</a></li>
-        </ul>
       </section>
+    {/if}
     <!---------- Collapsed Menu 2 End ---------->
 
 </main>
@@ -201,51 +206,51 @@ const stickToTop = () => {
 
 nav {
 /*background-color: #1c1d25;*/
-background-color: #d6b18c;
-display: flex;
-justify-content: space-between;
-height: 100px;
-border-bottom: 1px solid white;
-z-index: 3;
+  background-color: #d6b18c;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  border-bottom: 1px solid white;
+  z-index: 3;
 }
 
 .sticky {
-position: fixed !important;
-top: 0 !important;
-width: 100% !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
 }
 
 .sticky-2 {
-position: fixed !important;
-top: 88px !important;
-width: 100% !important;
+  position: fixed !important;
+  top: 88px !important;
+  width: 100% !important;
 }
 
 
 
 .nav-container-left, .nav-container-middle, .nav-container-right {
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-container-left {
-padding: 0px 0px 10px 15px;
+  padding: 0px 0px 10px 15px;
 }
 
 .logo {
-padding: 1px;
-height: 60px;
-margin: 10px;
-background-color: rgba(0, 0, 0, 0.5);
-border-radius: 10px;
+  padding: 1px;
+  height: 60px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .logo-text {
-font-size: 12px;
-color: rgb(0, 0, 0);
-font-weight: 400;
-margin-top: -15px;
-}
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  margin-top: -15px;
+  }
 
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -256,7 +261,8 @@ margin-top: -15px;
   }
 
   .ms-open {
-      display: none;
+      /*display: none;*/
+      height: 150px
   }
 
   .nav-container-middle {
@@ -366,7 +372,7 @@ background-color: rgba(134, 134, 134, 0.8);
       display: none;
   }
     
-  @keyframes expand {
+  /*@keyframes expand {
     from {height: 0px;}
     to {height: 150px;}
   }
@@ -384,7 +390,7 @@ background-color: rgba(134, 134, 134, 0.8);
   @keyframes grow {
     from {font-size: 0px;}
     to {font-size: 23px;}
-  }
+  }*/
 
 /*---------- Collapsed Navigation Keyframes End ------------------------------------------------------*/
 
@@ -400,14 +406,14 @@ background-color: rgba(134, 134, 134, 0.8);
     font-size: 23px;
     text-decoration: none;
     list-style-type: none;
-    animation: grow 0.5s ease !important;
+    /*animation: grow 0.5s ease !important;*/
 }
 
 #col-list-hidden {
     font-size: 0px;
     text-decoration: none;
     list-style-type: none;
-    animation: shrink 0.5s linear !important;
+    /*animation: shrink 0.5s linear !important;*/
 }
 
 .menu-section {
@@ -418,7 +424,7 @@ background-color: rgba(134, 134, 134, 0.8);
     /*background-color: #1c1d25;*/
     background-color: #d6b18c;
     color: rgb(0, 0, 0);
-    animation: collapse 0.25s cubic-bezier(0, 0, 0.1, 0.1) !important;
+    /*animation: collapse 0.25s cubic-bezier(0, 0, 0.1, 0.1) !important;*/
 }
 
 .ms-open {
@@ -430,7 +436,7 @@ background-color: rgba(134, 134, 134, 0.8);
     background-color: #d6b18c;
     color: rgb(0, 0, 0);
     z-index: 3;
-    animation: expand 0.5s ease !important;
+    /*animation: expand 0.5s ease !important;*/
 }
 
 .menu-btn {
@@ -511,7 +517,7 @@ background-color: rgba(134, 134, 134, 0.8);
   }
 
   .ms-open {
-    animation: expand 0.5s ease !important;
+    /*animation: expand 0.5s ease !important;*/
     position: fixed !important;
     top: 70px !important;
     width: 100% !important;
@@ -523,7 +529,7 @@ background-color: rgba(134, 134, 134, 0.8);
     height: 0vh;
     background-color: #d6b18c;
     color: rgb(0, 0, 0);
-    animation: collapse 0.5s ease !important;
+    /*animation: expand 0.5s ease !important;*/
   }
 
 }

@@ -3,7 +3,15 @@
     import Navbar from "./comp library/Navbar.svelte";
     import Header from "./comp library/Header.svelte";
     import Footer from "./comp library/Footer.svelte";
+    import { fade, blur, fly, slide, scale } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
     import "../styles/global.css";
+
+    /*let y
+    
+    const showY = function() {
+        console.log(y)
+    }*/
     
 </script>
     
@@ -14,7 +22,7 @@
     
     
     
-    
+<!--<svelte:window  on:scroll="{showY}" bind:scrollY={y} />-->
     
     <main>
         <Header />
@@ -39,22 +47,9 @@
             <div class="button-1"><a href="/courses">Contact Us</a></div>
             <div class="button-2"><a href="/courses">Our Courses</a></div>
           </div>
-          <!----------
-          <div class="socials">
-            <div><a href="https://www.twitter.com" class="social">
-              <img id="twitter" src="src/img/icons/twitter.png" alt="Twitter">
-            </a></div>
-            <div><a href="https://www.facebook.com"  class="social">
-              <img id="facebook" src="src/img/icons/facebook.png" alt="Facebook"> 
-            </a></div>
-            <div><a href="https://www.instagram.com"  class="social">
-              <img id="instagram" src="src/img/icons/instagram.png" alt="Instagram">
-            </a></div>
-          </div> 
-          ---------->
     
         </section>
-    
+        
         <section class="sub-section">
             <div class="information">
                 <h2>BE ACTIVE LEARNING SYSTEM</h2>
@@ -70,37 +65,37 @@
         </section>
     
         <section class="sub-section-alternative">
-            <h2>Our Benefits</h2>
+            <h2 transition:fade={{duration: 3000}}>Our Benefits</h2>
             <div class="info-container">
-                <div class="info">
+                <div class="info" transition:fly={{duration: 2000}}>
                     <img class="info-image" src="img/icons/3.png" alt="Adapted Content">
                     <div>
                       <h3>ADAPTED CONTENT</h3>
                       <p class="subtext">Teachers design the assignments on the online platform.</p>
                     </div>
                 </div>
-                <div class="info">
+                <div class="info" transition:blur={{duration: 1000}}>
                   <img class="info-image" src="img/icons/4.png" alt="Individual Learning">
                   <div>
                     <h3>INDIVIDUAL LEARNING</h3>
                     <p class="subtext">Based on the student’s level and learning speed.</p>
                   </div>
                 </div>
-                <div class="info">
+                <div class="info" transition:fly={{duration: 2000}}>
                   <img class="info-image" src="img/icons/2.png" alt="Flexible Communication">
                   <div>
                     <h3>FLEXIBLE COMMUNICATION</h3>
                     <p class="subtext">Participants and teacher use the platform to communicate even outside of lessons.</p>
                   </div>
                 </div>
-                <div class="info">
+                <div class="info" transition:slide={{duration: 1000}}>
                   <img class="info-image" src="img/icons/1.png" alt="Regular Checks">
                   <div>
                     <h3>REGULAR CHECKS</h3>
                     <p class="subtext">Teacher corrects online and monitors use of the platform and learning success.</p>
                   </div>
                 </div>
-                <div class="info">
+                <div class="info" transition:scale={{duration: 2000}}>
                   <img class="info-image" src="img/icons/6.png" alt="Specific Advancement">
                   <div>
                     <h3>SPECIFIC ADVANCEMENT</h3>
@@ -234,10 +229,10 @@
             font-size: 12px !important;
         }
         
-        .first-area > p {
+        /*.first-area > p {
             padding: 0px 0px 0px 0px;
             font-size: 15px !important;
-        }
+        }*/
         
         .button-1 {
             padding-top:  15px !important;
@@ -323,10 +318,10 @@
             font-size: 15px !important;
         }
         
-        .first-area > p {
+        /*.first-area > p {
             padding: 0px 0px 0px 0px;
             font-size: 20px !important;
-        }
+        }*/
         
         .button-1 {
             padding-top:  15px !important;
@@ -400,10 +395,10 @@
             font-size: 15px !important;
         }
     
-        .first-area > p {
+        /*.first-area > p {
             padding: 0px 0px 0px 0px;
             font-size: 20px !important;
-        }
+        }*/
     
         .button-1 {
             width: 100px !important;
@@ -511,10 +506,10 @@
             font-size: 17px !important;
         }
     
-        .first-area > p {
+        /*.first-area > p {
             padding: 0px 0px 0px 0px;
             font-size: 22px !important;
-        }
+        }*/
     
         .button-1 {
             width: 100px !important;
@@ -593,10 +588,10 @@
             font-size: 20px !important;
         }
     
-        .first-area > p {
+        /*.first-area > p {
             padding: 0px 0px 0px 0px;
             font-size: 22px !important;
-        }
+        }*/
     
         .sub-section {
             margin: 0px !important;
@@ -647,10 +642,10 @@
             font-size: 20px !important;
         }
     
-        .first-area > p {
+        /*.first-area > p {
             padding: 0px 0px 0px 0px;
             font-size: 27px !important;
-        }
+        }*/
     
         .sub-section {
             margin: 0px !important;
@@ -753,46 +748,6 @@
     
     /*--------- Main Logo End ---------------*/
     
-    /*
-    .socials {
-        display: grid;
-        justify-content: right;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 3;
-        margin: -400px 0px 0px 0px;
-    }
-    */
-    /*
-    #twitter {
-        height: 70px;
-        width: 70px;
-        border-radius: 15px;
-        background-color: #00aced;
-    }
-    
-    #facebook {
-        height: 70px;
-        width: 70px;
-        border-radius: 15px;
-        background-color: #39569c;
-    }
-    
-    #instagram {
-        height: 70px;
-        width: 70px;
-        border-radius: 15px;
-        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    }
-    
-    .socials > div > a > img:hover {
-        height: 70px;
-        width: 70px;
-        background: #d6b18c !important;
-        transition: ease-out 0.3 !important;
-    }
-    */
     
     .landing-page-info {
         max-width: 500px;
