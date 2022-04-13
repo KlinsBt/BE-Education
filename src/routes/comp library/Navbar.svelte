@@ -2,7 +2,7 @@
 
     import { fade, blur, fly, slide, scale } from "svelte/transition";
     import { quintOut } from "svelte/easing";
-import { transition_in } from "svelte/internal";
+    import { transition_in } from "svelte/internal";
 
 /////////////// Language Container ///////////////////////////////////////
 
@@ -488,7 +488,7 @@ background-color: rgba(134, 134, 134, 0.8);
   .menu-btn__burger::after {
     transform: translateY(16px);
   }
-  /* ANIMATION */
+  
   .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
     background: transparent;

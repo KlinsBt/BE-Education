@@ -18,7 +18,7 @@
 
   <div class="container">
     <h2>Write Us</h2>
-    <form action="https://formsubmit.co/52ecb6ad730758961cb87dbfb4cd342f" method="POST">
+    <form action="https://formsubmit.co/52ecb6ad730758961cb87dbfb4cd342f" method="POST">git a
         <input type="email" name="E-Mail" id="email" placeholder="Enter your email" required>
         <input type="text" name="Name" id="name" placeholder=" enter your name" required>
         <textarea name="Message" id="message" cols="35" rows="10" placeholder="Enter your message here"></textarea>

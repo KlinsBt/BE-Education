@@ -3,8 +3,8 @@
     import Navbar from "./comp library/Navbar.svelte";
     import Header from "./comp library/Header.svelte";
     import Footer from "./comp library/Footer.svelte";
-    import { fade, blur, fly, slide, scale } from "svelte/transition";
-    import { quintOut } from "svelte/easing";
+    //import { fade, blur, fly, slide, scale } from "svelte/transition";
+    //import { quintOut } from "svelte/easing";
     import "../styles/global.css";
 
     /*let y
@@ -12,6 +12,8 @@
     const showY = function() {
         console.log(y)
     }*/
+
+    //in:slide|local={{duration: 1000}} out:slide|local={{duration: 2000}}
     
 </script>
     
@@ -65,37 +67,37 @@
         </section>
     
         <section class="sub-section-alternative">
-            <h2 transition:fade={{duration: 3000}}>Our Benefits</h2>
+            <h2>Our Benefits</h2>
             <div class="info-container">
-                <div class="info" transition:fly={{duration: 2000}}>
+                <div class="info">
                     <img class="info-image" src="img/icons/3.png" alt="Adapted Content">
                     <div>
                       <h3>ADAPTED CONTENT</h3>
                       <p class="subtext">Teachers design the assignments on the online platform.</p>
                     </div>
                 </div>
-                <div class="info" transition:blur={{duration: 1000}}>
+                <div class="info">
                   <img class="info-image" src="img/icons/4.png" alt="Individual Learning">
                   <div>
                     <h3>INDIVIDUAL LEARNING</h3>
                     <p class="subtext">Based on the student’s level and learning speed.</p>
                   </div>
                 </div>
-                <div class="info" transition:fly={{duration: 2000}}>
+                <div class="info">
                   <img class="info-image" src="img/icons/2.png" alt="Flexible Communication">
                   <div>
                     <h3>FLEXIBLE COMMUNICATION</h3>
                     <p class="subtext">Participants and teacher use the platform to communicate even outside of lessons.</p>
                   </div>
                 </div>
-                <div class="info" transition:slide={{duration: 1000}}>
+                <div class="info">
                   <img class="info-image" src="img/icons/1.png" alt="Regular Checks">
                   <div>
                     <h3>REGULAR CHECKS</h3>
                     <p class="subtext">Teacher corrects online and monitors use of the platform and learning success.</p>
                   </div>
                 </div>
-                <div class="info" transition:scale={{duration: 2000}}>
+                <div class="info">
                   <img class="info-image" src="img/icons/6.png" alt="Specific Advancement">
                   <div>
                     <h3>SPECIFIC ADVANCEMENT</h3>
