@@ -20,7 +20,7 @@
 
             <h3>Privacy Policy</h3>
             <p>
-                <span style="color: rgb(51, 51, 51);">Last updated: (26/04/2022)</span><br>
+                <span style="color: rgb(51, 51, 51);">Last updated: 26.04.2022</span><br>
                 This Company (Berndt Education) ("us", "we", or "our") operates http://www.berndteducation.com (the
                 "Site"). This page informs you of our policies regarding the collection, use and disclosure of
                 Personal Information we receive from users of the Site.
@@ -76,14 +76,14 @@
 
             <h3>Changes To This Privacy Policy</h3>
                 <p>
-                    This Privacy Policy is effective as of 27.04.2022 and will remain in effect except with respect to any
+                    This Privacy Policy is effective as of 26.04.2022 and will remain in effect except with respect to any
                     changes in its provisions in the future, which will be in effect immediately after being posted on this page.
                     We reserve the right to update or change our Privacy Policy at any time and you should check this
                     Privacy Policy periodically. Your continued use of the Service after we post any modifications to the
                     Privacy Policy on this page will constitute your acknowledgment of the modifications and your
                     consent to abide and be bound by the modified Privacy Policy.
                     If we make any material changes to this Privacy Policy, we will notify you either through the email
-                    address you have provided us, or by placing a prominent notice on our website.
+                    address you have provided us, or by placing a prominent notice on our webste.
                 </p>
 
             <br>
