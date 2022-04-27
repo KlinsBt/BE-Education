@@ -30,8 +30,8 @@
         <div class="boxes">
             <Course lang="German" background="/img/flags/ger.png" />
             <Course lang="Spanish" background="/img/flags/esp.png"/>
-            <Course lang="English" background="img/flags/uk.png"/>
-            <Course lang="French" background="img/flags/frn.png"/>
+            <Course lang="English" background="/img/flags/uk.png"/>
+            <Course lang="French" background="/img/flags/frn.png"/>
         </div>
         <Footer />
     </main>
