@@ -36,15 +36,20 @@
                 <h2>EDUCATION OPENS DOORS</h2>
               </div>
               <div><img id="main-logo" src="/img/icons/Wordpress Transparent.png" alt="Main-Logo"></div>
-                <h3 id="descr-1">With Berndt Education you'll be ahead</h3>
-                <p id="descr-2">We offer personalized language courses for everyone,
-                     creating the ideal conditions for you to learn languages as quickly and effectively as possible.</p>
+                <h3 id="descr-1">With Berndt Education you will think wider and further ahead</h3>
+                <p id="descr-2">Berndt Education offers personalized language courses for businesses, 
+                    individuals by creating the ideal conditions for you to learn your desired language 
+                    as quickly and effectively as possible. Professional educators will create a taylor-made 
+                    programme that suits your work-life balance and leaves you smarter than before after every session.</p>
             </div>
-          <div class="first-area">
-                <!---<p>Get in contact!</p>--->
+
+          <!--<div class="first-area">
+                <p>Get in contact!</p>
                 <br/>
-          </div>
+          </div> -->
     
+          <br>
+          
           <div class="buttons">
             <div class="button-1"><a href="/courses">Contact Us</a></div>
             <div class="button-2"><a href="/courses">Our Courses</a></div>
@@ -56,14 +61,11 @@
             <div class="information">
                 <h2>BE ACTIVE LEARNING SYSTEM</h2>
                 <h3 id="sub1">The method for successful learning</h3>
-                <p>With Berndt Education, your company benefits from an engaging learning concept 
-                    which exploits interconnectedness via media in conjunction with classic learning methods.</p>
+                <p>With Berndt Education, you or your company benefits from an engaging learning concept which exploits 
+                    interconnectedness via media in conjunction with classic learning methods. The BE Educators are specialised 
+                    in neuro-linguistic strategies to make your learning experience immersive and retention of material permanent.</p>
             </div>
-            <!----------
-            <div class="headshot-container">
-                <img class="headshot" src="img/be-logo.png" alt="">
-            </div>
-            ---------->
+
         </section>
     
         <section class="sub-section-alternative">
@@ -72,36 +74,38 @@
                 <div class="info">
                     <img class="info-image" src="img/icons/3.png" alt="Adapted Content">
                     <div>
-                      <h3>ADAPTED CONTENT</h3>
-                      <p class="subtext">Teachers design the assignments on the online platform.</p>
+                      <h3>TAYLOR-MADE PROGRAMMES</h3>
+                      <p class="subtext">Educators design the individual programme after a consultation meeting to set goals, choose a schedule and learning materials.</p>
                     </div>
                 </div>
                 <div class="info">
                   <img class="info-image" src="img/icons/4.png" alt="Individual Learning">
                   <div>
-                    <h3>INDIVIDUAL LEARNING</h3>
-                    <p class="subtext">Based on the student’s level and learning speed.</p>
+                    <h3>SELF-RELIANT LEARNING</h3>
+                    <p class="subtext">Based on the student’s level and learning speed, BE educators will empower the client to proactively work on their 
+                        language development within the online sessions and beyond via homework projects and constructive feedback sessions.</p>
                   </div>
                 </div>
                 <div class="info">
                   <img class="info-image" src="img/icons/2.png" alt="Flexible Communication">
                   <div>
-                    <h3>FLEXIBLE COMMUNICATION</h3>
-                    <p class="subtext">Participants and teacher use the platform to communicate even outside of lessons.</p>
+                    <h3>FLEXIBLE COMMUNICATION SKILLS DEVELOPMENT</h3>
+                    <p class="subtext">Participants and teacher use the Berndt Education Learning System to 
+                        communicate with ease and confident via adapted training in the learning language.</p>
                   </div>
                 </div>
                 <div class="info">
                   <img class="info-image" src="img/icons/1.png" alt="Regular Checks">
                   <div>
-                    <h3>REGULAR CHECKS</h3>
-                    <p class="subtext">Teacher corrects online and monitors use of the platform and learning success.</p>
+                    <h3>FEEDBACK FOR SUCCESS</h3>
+                    <p class="subtext">Educators give constructive feedback online and monitors use of the language to guarantee learning success.</p>
                   </div>
                 </div>
                 <div class="info">
                   <img class="info-image" src="img/icons/6.png" alt="Specific Advancement">
                   <div>
                     <h3>SPECIFIC ADVANCEMENT</h3>
-                    <p class="subtext">Participants learn independent of the instructor and can therefore achieve maximum learning success.</p>
+                    <p class="subtext">Clients learn beyond the BE Courses independent of the BE Educator with provided materials and therefore achieve maximum learning success.</p>
                   </div>
                 </div>
             </div>
@@ -275,7 +279,7 @@
         }
     
         .info {
-            height: 360px !important;
+            height: 500px !important;
         }
     
         section.sub-section-alternative > div > div > div > h3 {
@@ -517,12 +521,14 @@
             width: 100px !important;
             height: 40px !important;
             font-size: 22px !important;
+            border: 1px solid white !important;
         }
     
         .button-2 {
             width: 100px !important;
             height: 40px !important;
             font-size: 22px !important;
+            border: 1px solid white !important;
         }
     
         .sub-section {
@@ -555,6 +561,7 @@
     
         .sec-1 {
             margin-top: 50px !important;
+            height: 550px !important;
         }
 
     }
@@ -563,6 +570,7 @@
     
         .sec-1 {
             margin-top: 0px !important;
+            height: 550px !important;
         }
     
     }
@@ -571,7 +579,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 10px !important;
-            height: 500px !important;
+            height: 700px !important;
         }
     
         .sec-1 > div > div {
@@ -625,7 +633,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 70px !important;
-            height: 600px !important;
+            height: 800px !important;
         }
     
         .sec-1 > div > div {
@@ -653,18 +661,6 @@
             margin: 0px !important;
             padding: 22px !important;
             justify-content: center;
-        }
-    
-        .button-1 {
-            padding-top:  17px !important;
-            max-width: 250px !important;
-            height: 70px !important;
-        }
-    
-        .button-2 {
-            padding-top:  17px !important;
-            max-width: 250px !important;
-            height: 70px !important;
         }
     
         .information > h2 {
@@ -764,12 +760,12 @@
         color: rgba(255, 255, 255, 0.8)
     }
     
-    .first-area {
+    /*.first-area {
         padding: 50px 0px 0px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    }*/
     
     .buttons {
         display: flex;
@@ -786,11 +782,12 @@
         padding-top: 5px;
         margin: 10px 20px 0px 0px;
         cursor: pointer;
+        border: 0.5px solid white;
         z-index: 2;
     }
     
     .button-1:hover {
-        background-color: #8b2c0c;
+        background-color: rgb(255, 123, 75);
         transition: linear 0.1s;
         transform: scale(1.01);
     }
@@ -805,7 +802,7 @@
         height: 55px;
         border-radius: 15px;
         background-color: rgba(255, 255, 255, 0);
-        box-shadow: 0px 0px 5px rgba(255, 255, 255);
+        border: 0.5px solid white;
         text-align: center;
         font-size: 30px;
         font-weight: 300;
@@ -816,7 +813,7 @@
     }
     
     .button-2:hover {
-        background-color: rgba(111, 162, 255, 0.555);
+        background-color: #d6b18c;
         /*transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;*/
         transition: ease-in-out 0.3s;
     }
@@ -859,8 +856,9 @@
     }
 
     #sub1 {
-        font-size: 20px;
+        font-size: 30px;
     }
+
 
      /*
     .headshot {
@@ -916,9 +914,13 @@
         border-color: black;
         padding: 10px 10px 10px 10px;
     }
+
+    .sub-section-alternative > div > div > div > h3 {
+        font-size: 16px;
+    }
     
     .info > div > p {
-        font-size: 20px;
+        font-size: 15px;
     }
     
     @media only screen and (min-width: 100px) and (max-width: 500px) {

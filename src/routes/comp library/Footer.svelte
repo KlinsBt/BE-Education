@@ -40,10 +40,10 @@
                         <p><a itemprop="email" href="mailto:info@berndteducation.com" class="svelte-1j5i9np">info@berndteducation.com</a></p>
                         <p><a href="tel:+34631896435">+34 631896435</a></p>
                         <p><a href="tel:+447922489668">+447922489668</a></p>
-                        <p><a href="/">Imprint</a></p>
-                        <p><a href="/">Terms of Usage</a></p>
-                        <p><a href="/">Privacy Policy</a></p>
-                        <p><a href="/">FAQ</a></p>
+                        <!-- <p><a href="/">Imprint</a></p>
+                        <p><a href="/">Terms of Usage</a></p> -->
+                        <p><a href="/privacy-policy">Privacy Policy</a></p>
+                        <!-- <p><a href="/">FAQ</a></p> -->
                         <br/>
                         <p>Copyright © 2022 - Berndt Education</p>
                     </div>

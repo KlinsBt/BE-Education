@@ -1,5 +1,8 @@
 <script>
 
+export let lang
+export let background
+
 </script>
 
 <main>
@@ -8,11 +11,11 @@
                     <div class="block">
                         <div>
                             <ul class="infos">
-                                <li class="bgr">
-                                    <h3>BE German</h3>
+                                <li class="bgr" style="--image: url({background});">
+                                    <h3>BE {lang}</h3>
                                 </li>
                                 <li>
-                                    <p>Learn German from home via Zoom with qualified<br/>
+                                    <p>Learn {lang} from home via Zoom with qualified<br/>
                                        teachers and an engaging learning system.</p>
                                 </li>
                                 <li>Small groups of 7-10 students</li>
@@ -64,7 +67,7 @@
                                     <h3>48h</h3>
                                 </li>
                                 <li>
-                                    <button class="button" style="vertical-align:middle"><span>Join Now</span></button>
+                                    <button class="button" style="vertical-align:middle"><a href="/contact"><span>Join Now</span></a></button>
                                 </li>
                             </ul>
                         </div>
@@ -103,21 +106,23 @@
     }
 
     .bgr {
-        background: rgb(5,6,8);
-        background: linear-gradient(100deg, rgba(5,6,8,1) 0%, rgba(222,31,38,0.8547794117647058) 55%, rgba(252,206,8,1) 100%);
-        background-size:cover;
+        background: var(--image);
+        /*background: linear-gradient(100deg, rgba(5,6,8,1) 0%, rgba(222,31,38,0.8547794117647058) 55%, rgba(252,206,8,1) 100%);*/
+        background-size: 370px 170px;
         background-repeat:no-repeat;
         background-position:center center;
         background-blend-mode: overlay;
         border-radius: 15px 15px 0px 0px;
+        background-color: rgba(255, 255, 255, 0.15);
     }
 
     .bgr > h3 {
         font-size: 40px;
         font-weight: 700;
+        text-shadow: 2px 2px 15px rgb(0, 0, 0);
         color:rgb(255, 255, 255);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgb(104, 104, 104);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
     }
 
     .infos li:first-child,
@@ -194,7 +199,7 @@
         right: 0;
     }
 
-    .button > span {
+    .button > a > span {
         font-size: 24px;
         font-weight: 500;
         color: #FFFFFF;
@@ -226,7 +231,7 @@
 
         .bgr > h3 {
             font-size: 30px;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         h3 {

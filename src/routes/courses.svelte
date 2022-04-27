@@ -21,14 +21,17 @@
         <Header />
         <Navbar />
         <div class="title"> 
-            <h1>Our Courses</h1>
+            <h1>Our BE Courses</h1>
         </div>
 
         <div class="sub-title">
-            <p>Here you can see our course catalog.</p>
+            <p>Here you can see our Berndt Education course catalogue.</p>
                 </div>
         <div class="boxes">
-            <Course />
+            <Course lang="German" background="/img/flags/ger.png" />
+            <Course lang="Spanish" background="/img/flags/esp.png"/>
+            <Course lang="English" background="img/flags/uk.png"/>
+            <Course lang="French" background="img/flags/frn.png"/>
         </div>
         <Footer />
     </main>
@@ -119,5 +122,33 @@
             font-size: 25px;
         }
     }
+
+    @media (max-width: 729px) {
+
+        .boxes {
+            margin: 100px 0px 50px 0px;
+            display: grid;
+            grid-template-columns: auto;
+        } 
+    }
+
+    @media (min-width: 730px) and (max-width: 1049px) {
+
+        .boxes {
+            margin: 100px 0px 50px 0px;
+            display: grid;
+            grid-template-columns: auto auto;
+        } 
+    }
+
+    @media (min-width: 1050px) and (max-width: 1345px) {
+
+        .boxes {
+            margin: 100px 0px 50px 0px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        } 
+    }
+
     
     </style>

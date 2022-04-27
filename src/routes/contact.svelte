@@ -21,12 +21,15 @@
         <Header />
         <Navbar />
         <div class="title"> 
-            <h1>Send us a Message</h1>
+            <h1>Send us an Inquiry</h1>
         </div>
 
         <div class="sub-title">
-            <p>Please do get in touch for a free 15 minute consultation meeting.
-            <br/>We are happy to help you.</p>
+            <p>Send us a message for a free 15-minute consultation meeting.<br>
+                We are happy to help you achieve your language goals, develop your learning curriculum and solve 
+                any challenges you may have in terms of language solutions, i.e., translation and interpretation, 
+                as well as courses on public speaking and management in the desired language.
+            </p>
         </div>
         <div class="add-form">
             <div class="address-container">
@@ -98,7 +101,7 @@
         }
 
         p {
-            font-size: 20px;
+            font-size: 17px;
         }
     }
 

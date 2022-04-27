@@ -23,12 +23,16 @@
         <Header />
         <Navbar />
         <div class="title"> 
-            <h1>Our Team</h1>
+            <h1>The BE Team</h1>
         </div>
         <div class="sub-title">
-            <p>Some text about the team.</p>
+            <p>We help you achieve your goals</p>
         </div>
         <EmployeeCard />
+        <div class="logo-container">
+            <a href="https://www.sada-center.org/"><img src="/img/logos/Sada.png" alt="Sada-Logo"></a>
+        </div>
+        <br>
         <Footer />
     </main>
     
@@ -59,6 +63,24 @@
             text-align: center;
             margin-top: 20px;
             padding: 0px 50px 100px 50px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container > a > img {
+            width: 150px;
+            height: 100px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .logo-container > a > img:hover {
+            transform: scale(1.02);
+            transition-duration: 0.4s;
         }
         
         @media (min-width: 50px) and (max-width: 300px) {
