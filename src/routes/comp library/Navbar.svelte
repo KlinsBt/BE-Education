@@ -104,7 +104,7 @@ const stickToTop = () => {
         <div class="nav-container-middle">
             <ul id="nav-list">
                 <li><a href="/">Home</a></li>
-                <li><a href="/courses">Individual Courses</a></li>
+                <li><a href="/courses">BE Courses</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -139,7 +139,7 @@ const stickToTop = () => {
       <section transition:slide={{duration: 300}} class="{menuDiv} {menuDivSticky}">
         <ul id={col} transition:slide={{duration: 300}}>
           <li><a href="/">Home</a></li>
-          <li><a href="/courses">Individual Courses</a></li>
+          <li><a href="/courses">BE Courses</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/contact">Contact</a></li>
       </section>
@@ -241,8 +241,8 @@ nav {
   padding: 1px;
   height: 60px;
   margin: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 35px;
 }
 
 .logo-text {

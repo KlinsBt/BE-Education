@@ -6,18 +6,18 @@
 
     <footer>
         <div class="socials">
-            <div>
+            <!--<div>
                 <a href="https://www.twitter.com" class="social">
                     <img id="twitter" src="img/icons/twitter.png" alt="Twitter">
                 </a>
-            </div>
+            </div>-->
             <div>
-                <a href="https://www.facebook.com"  class="social">
+                <a href="https://m.facebook.com/Berndt-Education-105991241926914/"  class="social">
                     <img id="facebook" src="img/icons/facebook.png" alt="Facebook"> 
                 </a>
             </div>
             <div>
-                <a href="https://www.instagram.com"  class="social">
+                <a href="https://www.instagram.com/berndteducation/"  class="social">
                     <img id="instagram" src="img/icons/instagram.png" alt="Instagram">
                 </a>
             </div>
@@ -29,11 +29,13 @@
         </div>
         <div class="address-container">
             <address>
-                <span>Pl. de Uncibay, nº3
+                <span>Berndt Education
                     <br>
-                    1ª Planta Oficinas 2 y 3
+                    Calle Salamanca, 31
                     <br>
-                    Málaga, Andalucia 29008
+                    Planta Tercero, Puerta 1
+                    <br>
+                    29013, Malaga
                     <br>
                     Spain
                     <div>

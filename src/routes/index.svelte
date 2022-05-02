@@ -30,12 +30,14 @@
         <Header />
         <Navbar />
         <section class="sec-1">
+
+            <img id="main-logo2" src="./img/logos/TransparentLogo.png" alt="Berndt Education Main Banner">
     
             <div class="landing-page-info">
               <div>
                 <h2>EDUCATION OPENS DOORS</h2>
               </div>
-              <div><img id="main-logo" src="/img/icons/Wordpress Transparent.png" alt="Main-Logo"></div>
+              <div><img id="main-logo" src="./img/icons/Wordpress Transparent.png" alt="Main Logo"></div>
                 <h3 id="descr-1">With Berndt Education you will think wider and further ahead</h3>
                 <p id="descr-2">Berndt Education offers personalized language courses for businesses, 
                     individuals by creating the ideal conditions for you to learn your desired language 
@@ -200,6 +202,13 @@
     
     
     /*---------- Landing Page Info ------------------------------------------------------*/
+
+    #main-logo2 {
+        max-width: 100%;
+        height: auto;
+        display: none;
+        opacity: 0.8;
+    }
     
     /*---------- Landing Page Info MQ ----------------------------------------------------------*/
     
@@ -208,7 +217,7 @@
         .sec-1 {
             padding: 70px 10px 0px 10px !important;
             margin-top: 0px !important;
-            height: 400px !important;
+            height: 700px !important;
         }
     
         .sec-1 > div > div {
@@ -297,7 +306,7 @@
         .sec-1 {
             padding: 70px 10px 0px 10px !important;
             margin-top: 0px !important;
-            height: 50vh !important;
+            height: 800px !important;
         }
     
         .sec-1 > div > div {
@@ -374,7 +383,7 @@
         .sec-1 {
             padding: 85px 10px 0px 10px !important;
             margin-top: 0px !important;
-            height: 500px !important;
+            height: 1000px !important;
         }
     
         .sec-1 > div > div {
@@ -493,7 +502,7 @@
         .sec-1 {
             padding: 70px 10px 0px 10px !important;
             margin-top: 0px !important;
-            height: 500px !important;
+            height: 600px !important;
         }
     
         :global(#col-list)  {
@@ -561,7 +570,7 @@
     
         .sec-1 {
             margin-top: 50px !important;
-            height: 550px !important;
+            height: 750px !important;
         }
 
     }
@@ -570,7 +579,7 @@
     
         .sec-1 {
             margin-top: 0px !important;
-            height: 550px !important;
+            height: 900px !important;
         }
     
     }
@@ -579,7 +588,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 10px !important;
-            height: 700px !important;
+            height: 1000px !important;
         }
     
         .sec-1 > div > div {
@@ -633,7 +642,7 @@
     
         .sec-1 {
             padding: 30px 10px 0px 70px !important;
-            height: 800px !important;
+            height: 1200px !important;
         }
     
         .sec-1 > div > div {
@@ -738,9 +747,29 @@
     }
     
     @media (max-width: 999px) {
+
+        .sec-1 {
+            height: 1200px;
+        }
     
         #main-logo {
-        display: none;
+            display: none;
+        }
+
+        #main-logo2 {
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            opacity: 0.8;
+        }
+    }
+
+    @media (max-width: 750px) {
+    
+        #main-logo2 {
+            width: 100% !important;
+            height: auto !important;
+            opacity: 0.8;
         }
     }
     

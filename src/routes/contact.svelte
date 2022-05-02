@@ -34,14 +34,16 @@
         <div class="add-form">
             <div class="address-container">
                 <address>
-                    <span>
-                        Pl. de Uncibay, nº3
-                        <br/>
-                        1ª Planta Oficinas 2 y 3
-                        <br/>
-                        Málaga, Andalucia 29008
-                        <br/>
+                    <span>Berndt Education
+                        <br>
+                        Calle Salamanca, 31
+                        <br>
+                        Planta Tercero, Puerta 1   
+                        <br>
+                        29013, Malaga
+                        <br>
                         Spain
+                        <div>
                         <div class="info">
                             <p><a itemprop="email" href="mailto:info@berndteducation.com">info@berndteducation.com</a></p>
                             <p><a href="tel:+34631896435">+34 631896435</a></p>
@@ -165,6 +167,7 @@
     address > span {
         text-align: left; 
         display: grid;
+        width: 185px;
     }
 
     .info > p > a {
