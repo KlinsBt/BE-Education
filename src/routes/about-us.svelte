@@ -30,7 +30,10 @@
         </div>
         <EmployeeCard />
         <div class="logo-container">
-            <a href="https://www.sada-center.org/"><img src="/img/logos/Sada.png" alt="Sada-Logo"></a>
+            <div>
+                <p>Collaboration with:</p>
+                <a href="https://www.sada-center.org/"><img src="/img/logos/Sada.png" alt="Sada-Logo"></a>
+            </div>
         </div>
         <br>
         <Footer />
@@ -71,14 +74,23 @@
             align-items: center;
         }
 
-        .logo-container > a > img {
+        .logo-container > div {
+            display: grid;
+        }
+
+        .logo-container > div > p {
+            font-size: 15px !important;
+            font-weight: 500 !important;
+        }
+
+        .logo-container > div > a > img {
             width: 150px;
             height: 100px;
             cursor: pointer;
             transition-duration: 0.4s;
         }
 
-        .logo-container > a > img:hover {
+        .logo-container > div > a > img:hover {
             transform: scale(1.02);
             transition-duration: 0.4s;
         }
