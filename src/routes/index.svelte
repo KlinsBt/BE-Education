@@ -697,7 +697,7 @@
     .sec-1 {
         margin-top: 0px;
         background-color: #1c1d25;
-        height: 100vh;
+        height: 900px;
         color: white;
         font-size: 40px;
         padding: 100px 50px 0px 200px;

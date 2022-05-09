@@ -97,7 +97,9 @@ const stickToTop = () => {
 	<nav class="{navbar}">
 
         <div class="nav-container-left">
+          <div class="logo-container">
             <img class="logo" src="img/icons/Wordpress Transparent.png" alt="Berndt Education">
+          </div>
             <p class="logo-text">Berndt Education</p>
         </div>
 
@@ -237,12 +239,21 @@ nav {
   padding: 0px 0px 10px 15px;
 }
 
-.logo {
-  padding: 1px;
-  height: 60px;
-  margin: 10px;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 15px;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+}
+
+.logo {
+  height: 64px;
+  margin: -2px 0px 0px 2px;
 }
 
 .logo-text {
