@@ -3,7 +3,7 @@
     import Navbar from "./comp library/Navbar.svelte";
     import Header from "./comp library/Header.svelte";
     import Footer from "./comp library/Footer.svelte";
-    import Course from "./comp library/Course3.svelte";
+    import PrivCourses from "./comp library/PrivCourses.svelte";
     import "../styles/global.css";
     
 </script>
@@ -21,18 +21,13 @@
         <Header />
         <Navbar />
         <div class="title"> 
-            <h1>Our BE Courses</h1>
+            <h1>Our Private and Corporate BE Courses</h1>
         </div>
 
-        <div class="sub-title">
-            <p>Here you can see our Berndt Education course catalogue.</p>
-                </div>
-        <div class="boxes">
-            <Course lang="German" background="/img/flags/ger.png" />
-            <Course lang="Spanish" background="/img/flags/esp.png"/>
-            <Course lang="English" background="/img/flags/uk.png"/>
-            <Course lang="French" background="/img/flags/frn.png"/>
+        <div class="comp">
+            <PrivCourses/>
         </div>
+
         <Footer />
     </main>
     
@@ -53,15 +48,6 @@
         box-sizing: border-box;
         font-family: "Poppins",sans-serif;
     }
-
-    .boxes {
-        margin: 50px 0px 50px 0px;
-        display: flex;
-        justify-content: center;
-        /*display: grid;
-        grid-template-columns: auto auto auto;*/
-        transform: scale(0.9);
-    }
     
     .title {
             display: flex;
@@ -72,15 +58,11 @@
             padding: 0px 50px 0px 50px;
     }
 
-    .sub-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 20px;
-            padding: 0px 50px 0px 50px;
+    .comp {
+        margin: 50px 0px;
     }
 
+   
     @media (max-width: 450px) {
             .title {
                 margin-top: 150px;
@@ -129,33 +111,6 @@
             font-size: 25px;
         }
     } */
-
-    @media (max-width: 729px) {
-
-        .boxes {
-            margin: -100px 0px 50px 0px;
-            display: grid;
-            grid-template-columns: auto;
-        } 
-    }
-
-    @media (min-width: 730px) and (max-width: 1049px) {
-
-        .boxes {
-            margin: 0px 0px 50px 0px;
-            display: grid;
-            grid-template-columns: auto auto;
-        } 
-    }
-
-    @media (min-width: 1050px) and (max-width: 1345px) {
-
-        .boxes {
-            margin: 0px 0px 50px 0px;
-            display: grid;
-            grid-template-columns: auto auto auto;
-        } 
-    }
 
     
     </style>

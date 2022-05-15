@@ -1,5 +1,5 @@
 <script>
-  
+
 //import { prevent_default } from "svelte/internal";
 
 
@@ -26,7 +26,7 @@
     <!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">-->
     </form>
   </div>
-           
+
 </main>
 
 
@@ -52,9 +52,10 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        min-height: 100vh;
+        min-height: 70vh;
         width: 100%;
         /*background: radial-gradient(#777,#1C1D25);*/
+        transform: scale(0.95);
     }
 
     h2 {
@@ -63,11 +64,11 @@
     }
 
     .container {
+        margin: 50px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 500px;
-        margin: 15vh auto;
         padding: 15px;
         border-radius: 15px;
         border: none;
@@ -75,14 +76,14 @@
         background-color: white;
         /* background-color: gray; */
     }
-        
+
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
     }
-        
+
     input {
         width: 100%;
         margin: 10px 0px;
@@ -95,7 +96,7 @@
         border: none;
         background: rgb(235, 228, 228);
     }
-        
+
     textarea {
         width: 100%;
         margin: 20px 0px;

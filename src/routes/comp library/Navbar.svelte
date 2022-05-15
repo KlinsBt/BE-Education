@@ -1,8 +1,8 @@
 <script>
 
     import { fade, blur, fly, slide, scale } from "svelte/transition";
-    import { quintOut } from "svelte/easing";
-    import { transition_in } from "svelte/internal";
+    // import { quintOut } from "svelte/easing";
+    // import { transition_in } from "svelte/internal";
 
 /////////////// Language Container ///////////////////////////////////////
 
@@ -22,7 +22,9 @@ let lng = 0
 const languages = [
   {name: "ENG", flag: "/img/flags/us.png", link: "/", id: 0},
   {name: "GER", flag: "/img/flags/ger.png", link: "/", id: 1},
-  {name: "ESP", flag: "/img/flags/esp.png", link: "/", id: 2}
+  {name: "ESP", flag: "/img/flags/esp.png", link: "/", id: 2},
+  {name: "UKR", flag: "/img/flags/ukr.png", link: "/", id: 3},
+  {name: "ARA", flag: "/img/flags/ara.png", link: "/", id: 4},
 ]
     
 const selectLanguage = (id) => {
@@ -107,6 +109,7 @@ const stickToTop = () => {
             <ul id="nav-list">
                 <li><a href="/">Home</a></li>
                 <li><a href="/courses">BE Courses</a></li>
+                <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -142,6 +145,7 @@ const stickToTop = () => {
         <ul id={col} transition:slide={{duration: 300}}>
           <li><a href="/">Home</a></li>
           <li><a href="/courses">BE Courses</a></li>
+          <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/contact">Contact</a></li>
       </section>
@@ -252,8 +256,8 @@ nav {
 }
 
 .logo {
-  height: 64px;
-  margin: -2px 0px 0px 2px;
+  height: 55px;
+  margin: 2px 0px 0px 6px;
 }
 
 .logo-text {
@@ -284,9 +288,9 @@ nav {
   .nav-container-middle > ul {
       display: flex;
       list-style-type: none;
-      width: 600px;
+      width: 700px;
       justify-content: space-around;
-      font-size: 20px;
+      font-size: 18px;
       margin-left: -70px;
   }
 
@@ -362,7 +366,7 @@ cursor: pointer;
 border-radius: 15px 15px 0px 0px !important;
 }
 
-#language-container > a:nth-child(3) > li {
+#language-container > a:nth-child(5) > li {
 border-radius: 0px 0px 15px 15px !important;
 }
 
@@ -377,7 +381,7 @@ background-color: rgba(134, 134, 134, 0.8);
 
 /*---------- Collapsed Navigation Keyframes -----------------------------------------------------------*/
 
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 975px) {
 
   #nav-list {
       display: none;
@@ -440,7 +444,7 @@ background-color: rgba(134, 134, 134, 0.8);
 
 .ms-open {
     display: flex !important;
-    height: 150px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     /*background-color: #1c1d25;*/

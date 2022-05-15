@@ -73,7 +73,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            margin-top: 150px;
+            margin-top: 50px;
             padding: 0px 50px 0px 50px;
     }
 
@@ -85,6 +85,12 @@
             margin-top: 20px;
             padding: 0px 50px 0px 50px;
     }
+
+    @media (max-width: 450px) {
+            .title {
+                margin-top: 150px;
+            }
+        }
 
     @media (min-width: 50px) and (max-width: 300px) {
         h1 {
@@ -107,6 +113,7 @@
         }
     }
 
+/* 
     @media (min-width: 371px) and (max-width: 449px) {
 
         h1 {
@@ -116,9 +123,9 @@
         p {
             font-size: 20px;
         }
-    }
+    } */
 
-    @media (min-width: 450px) and (max-width: 570px) {
+    /* @media (min-width: 450px) and (max-width: 570px) {
 
         h1 {
             font-size: 70px;
@@ -127,7 +134,7 @@
         p {
             font-size: 25px;
         }
-    }
+    } */
 
     @media (min-width: 1300px) {
 
@@ -139,7 +146,7 @@
         .address-container {
             display: flex !important;
             justify-content: center !important;
-            margin: 150px 0px 0px 100px !important;
+            margin: 200px 0px 0px 100px !important;
         }
 
         .info {
@@ -156,12 +163,12 @@
     .address-container {
         display: flex;
         justify-content: center;
-        margin: 100px 0px 0px 0px;
+        margin: 150px 0px 0px 0px;
     }
 
     address {
         text-align: left;
-        margin-top: 150px;
+        margin-top: 0px;
     }
 
     address > span {

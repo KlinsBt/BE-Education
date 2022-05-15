@@ -191,6 +191,10 @@
         font-size: 30px;
         font-weight: 300;
     }
+
+    .information {
+        text-align: center;
+    }
     
     
     

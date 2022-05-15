@@ -31,8 +31,14 @@
         <EmployeeCard />
         <div class="logo-container">
             <div>
-                <p>Collaboration with:</p>
+                <h3>Collaboration with:</h3>
                 <a href="https://www.sada-center.org/"><img src="/img/logos/Sada.png" alt="Sada-Logo"></a>
+
+                <p>SADA is an integrated habilitative and educational center.</p>
+                <br>
+                <p>Our approach is unique because we promote joy whilst playing, learning and exploring. We aim to develop the child’s 
+                    communicative abilities through speech therapy, whilst developing a love of learning.
+                </p>
             </div>
         </div>
         <br>
@@ -55,7 +61,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            margin-top: 150px;
+            margin-top: 50px;
             padding: 0px 50px 10px 50px;
         }
 
@@ -65,7 +71,7 @@
             align-items: center;
             text-align: center;
             margin-top: 20px;
-            padding: 0px 50px 100px 50px;
+            padding: 0px 50px 0px 50px;
         }
 
         .logo-container {
@@ -76,16 +82,19 @@
 
         .logo-container > div {
             display: grid;
+            justify-items: center;
         }
 
         .logo-container > div > p {
+            text-align: center;
+            max-width: 450px;
             font-size: 15px !important;
             font-weight: 500 !important;
         }
 
         .logo-container > div > a > img {
-            width: 150px;
-            height: 100px;
+            width: 350px;
+            height: 220px;
             cursor: pointer;
             transition-duration: 0.4s;
         }
@@ -93,6 +102,20 @@
         .logo-container > div > a > img:hover {
             transform: scale(1.02);
             transition-duration: 0.4s;
+        }
+
+        h3 {
+            margin: 0px !important;
+        }
+
+        p {
+            padding: 0px 5px;
+        }
+
+        @media (max-width: 450px) {
+            .title {
+                margin-top: 150px;
+            }
         }
         
         @media (min-width: 50px) and (max-width: 300px) {
@@ -103,9 +126,14 @@
             p {
                 font-size: 15px;
             }
+
+            .logo-container > div > a > img {
+                width: 200px;
+                height: 120px;
+            }
         }
 
-    @media (min-width: 301px) and (max-width: 370px) {
+    @media (min-width: 301px) and (max-width: 375px) {
 
         h1 {
             font-size: 40px;
@@ -113,6 +141,11 @@
 
         p {
             font-size: 20px;
+        }
+
+        .logo-container > div > a > img {
+            width: 200px;
+            height: 120px;
         }
     }
 
@@ -127,7 +160,7 @@
         }
     }
 
-    @media (min-width: 450px) and (max-width: 570px) {
+    /* @media (min-width: 450px) and (max-width: 570px) {
 
         h1 {
             font-size: 70px;
@@ -136,6 +169,6 @@
         p {
             font-size: 25px;
         }
-    }
+    } */
     
     </style>

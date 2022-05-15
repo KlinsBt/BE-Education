@@ -68,7 +68,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        min-height: 100vh;
+        min-height: 70vh;
         width: 100%;
         /*background: radial-gradient(#777,#1C1D25);*/
     }
