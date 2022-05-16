@@ -19,7 +19,7 @@
       <div>
         <div>
           <p><span>🎓</span> Level</p>
-          <p style="font-weight:600;">A1, A2, B1, B2</p>
+          <p style="font-weight:600;">A1, A2, B1, B2, C1, C2</p>
         </div>
         <div>
           <p><span>⌚</span> Start</p>
@@ -43,7 +43,7 @@
         </div>
         <div>
           <p><span>💳</span> Price</p>
-          <p style="font-weight:600;">£360 - £720</p>
+          <p style="font-weight:600;">£420 - £840</p>
         </div>
       </div>
 
