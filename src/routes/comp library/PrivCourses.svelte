@@ -43,7 +43,7 @@
         </div>
         <div>
           <p><span>💳</span> Price</p>
-          <p style="font-weight:600;">£420 - £840</p>
+          <p style="font-weight:600;">420€ - 840€</p>
         </div>
       </div>
 
