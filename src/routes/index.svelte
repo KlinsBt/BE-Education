@@ -783,12 +783,18 @@
     .landing-page-info {
         max-width: 500px;
     }
+
+    /* .landing-page-info > div > h2 {
+        text-align: center;
+    } */
     
     #descr-1 {
+        /* text-align: center; */
         font-size: 25px;
     }
     
     #descr-2 {
+        /* text-align: center; */
         font-size: 17px;
         color: rgba(255, 255, 255, 0.8)
     }

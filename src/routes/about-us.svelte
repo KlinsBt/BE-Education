@@ -136,11 +136,11 @@
     @media (min-width: 301px) and (max-width: 375px) {
 
         h1 {
-            font-size: 40px;
+            font-size: 30px;
         }
 
         p {
-            font-size: 20px;
+            font-size: 15px;
         }
 
         .logo-container > div > a > img {
@@ -152,7 +152,7 @@
     @media (min-width: 371px) and (max-width: 449px) {
 
         h1 {
-            font-size: 50px;
+            font-size: 40px;
         }
 
         p {
