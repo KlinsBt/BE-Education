@@ -19,9 +19,12 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
+    "fast-glob": "^3.2.11",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
-    "svelte": "^3.44.0"
+    "svelte": "^3.44.0",
+    "svelte-sitemap": "^2.5.0",
+    "xmlbuilder2": "^3.0.2"
   },
   "type": "module"
 }
