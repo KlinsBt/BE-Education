@@ -38,7 +38,7 @@
                         <br>
                         Calle Salamanca, 31
                         <br>
-                        Planta Tercero, Puerta 1   
+                        Planta Tercera, Puerta 1   
                         <br>
                         29013, Malaga
                         <br>
