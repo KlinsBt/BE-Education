@@ -110,6 +110,7 @@ const stickToTop = () => {
                 <li><a href="/">Home</a></li>
                 <li><a href="/courses">BE Courses</a></li>
                 <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
+                <li><a href="/academic-summer-camp">Learn, Inspire & Explore</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -146,6 +147,7 @@ const stickToTop = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/courses">BE Courses</a></li>
           <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
+          <li><a href="/academic-summer-camp">Learn, Inspire & Explore</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/contact">Contact</a></li>
       </section>
@@ -277,18 +279,18 @@ nav {
 
   .ms-open {
       /*display: none;*/
-      height: 150px
+      height: 200px
   }
 
   .nav-container-middle {
-      padding-top: 15px;
+      padding-top: 20px;
 
   }
 
   .nav-container-middle > ul {
       display: flex;
       list-style-type: none;
-      width: 700px;
+      width: 900px;
       justify-content: space-around;
       font-size: 18px;
       margin-left: -70px;
@@ -381,7 +383,7 @@ background-color: rgba(134, 134, 134, 0.8);
 
 /*---------- Collapsed Navigation Keyframes -----------------------------------------------------------*/
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1170px) {
 
   #nav-list {
       display: none;
