@@ -110,7 +110,7 @@ const stickToTop = () => {
                 <li><a href="/">Home</a></li>
                 <li><a href="/courses">BE Courses</a></li>
                 <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
-                <li><a href="/academic-summer-camp">Learn, Inspire & Explore</a></li>
+                <li><a href="/uk-academic-programmes">UK Academic Programmes</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -147,7 +147,7 @@ const stickToTop = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/courses">BE Courses</a></li>
           <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
-          <li><a href="/academic-summer-camp">Learn, Inspire & Explore</a></li>
+          <li><a href="/uk-academic-programmes">UK Academic Programmes</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/contact">Contact</a></li>
       </section>
