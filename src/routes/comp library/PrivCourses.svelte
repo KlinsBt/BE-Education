@@ -41,10 +41,10 @@
           <p><span>💻</span> Access to learning platform</p>
           <p style="font-weight:600;">Entire course duration</p>
         </div>
-        <div>
+        <!-- <div>
           <p><span>💳</span> Price</p>
-          <p style="font-weight:600;">420€ - 840€</p>
-        </div>
+          <p style="font-weight:600;"></p>
+        </div> -->
       </div>
 
       <div class="button-container">

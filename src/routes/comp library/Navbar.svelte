@@ -109,8 +109,14 @@ const stickToTop = () => {
             <ul id="nav-list">
                 <li><a href="/">Home</a></li>
                 <li><a href="/courses">BE Courses</a></li>
-                <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
-                <li><a href="/uk-academic-programmes">UK Academic Programmes</a></li>
+                <li><a href="/corporate">Corporate Clients</a>
+                  <ul class="dropdown">
+                    <li><a href="/">Translation</a></li>
+                    <li><a href="/">Interpretation</a></li>
+                    <li><a href="/">Company Courses</a></li>
+                  </ul>
+                </li>
+                <li><a href="/education-travel">Education Travel</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
@@ -146,8 +152,13 @@ const stickToTop = () => {
         <ul id={col} transition:slide={{duration: 300}}>
           <li><a href="/">Home</a></li>
           <li><a href="/courses">BE Courses</a></li>
-          <li><a href="/private-and-corporate">Private & Corporate Clients</a></li>
-          <li><a href="/uk-academic-programmes">UK Academic Programmes</a></li>
+          <li><a href="/corporate">Corporate Clients</a></li>
+          <div class="dropdown-corporate-clients">
+            <a href="/">Translation</a>
+            <a href="/">Interpretation</a>
+            <a href="/">Company Courses</a>
+          </div>
+          <li><a href="/education-travel">Education Travel</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/contact">Contact</a></li>
       </section>
@@ -222,6 +233,102 @@ nav {
   z-index: 3;
 }
 
+#nav-list > li > .dropdown {
+  display: grid;
+  max-width: 140px !important;
+  justify-items: left;
+  align-items: center;
+  text-align: center;
+  background: #d6b18c;
+  z-index: 7;
+  padding: 0px;
+  height: 0px;
+  transition: 0.4s !important;
+  border-radius: 15px 0px 15px 0px;
+}
+
+#nav-list > li > .dropdown {
+  text-decoration: none;
+  list-style: none;
+}
+
+.dropdown > li {
+  transition: 0.4s !important;
+  display: none;
+}
+
+.dropdown > li > a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.4s !important;
+}
+
+#nav-list > li:nth-child(3) > a:hover + .dropdown {
+    padding: 5px !important;
+    height: 100px !important;
+    transition: 0.4s !important;
+}
+
+#nav-list > li:nth-child(3) > a:hover + .dropdown > li {
+    display: grid;
+    transition: 0.4s !important;
+}
+
+#nav-list > li:nth-child(3) > a:hover + .dropdown > li > a {
+    font-size: 14px !important;
+    transition: 0.4s !important;
+}
+
+.dropdown:hover > li {
+    display: grid;
+}
+
+.dropdown:hover > li:hover > a {
+    color: #ffffff;
+    transition: 0.1s !important;
+}
+
+.dropdown:hover > li > a {
+    font-size: 14px !important;
+}
+
+.dropdown:hover {
+    padding: 5px !important;
+    height: 100px !important;
+    font-size: 18px !important;
+    transition: 0s !important;
+}
+
+
+
+
+
+
+
+
+
+.dropdown-corporate-clients {
+  display: grid;
+  justify-items: left;
+}
+
+.dropdown-corporate-clients > a {
+  margin: 0px 0px 0px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  transition: 0.1s;
+}
+
+.dropdown-corporate-clients > a:hover {
+  color: white; 
+}
+
+
+
+
+
 .sticky {
   position: fixed !important;
   top: 0 !important;
@@ -279,7 +386,8 @@ nav {
 
   .ms-open {
       /*display: none;*/
-      height: 200px
+      height: 240px;
+      padding: 20px 0px 5px 0px;
   }
 
   .nav-container-middle {
@@ -446,14 +554,13 @@ background-color: rgba(134, 134, 134, 0.8);
 
 .ms-open {
     display: flex !important;
-    height: 200px;
+    height: 275px;
     justify-content: center;
     align-items: center;
-    /*background-color: #1c1d25;*/
     background-color: #d6b18c;
     color: rgb(0, 0, 0);
     z-index: 3;
-    /*animation: expand 0.5s ease !important;*/
+    padding: 10px 0px 5px 0px;
 }
 
 .menu-btn {
@@ -536,8 +643,10 @@ background-color: rgba(134, 134, 134, 0.8);
   .ms-open {
     /*animation: expand 0.5s ease !important;*/
     position: fixed !important;
-    top: 70px !important;
+    top: 80px !important;
     width: 100% !important;
+    padding: 15px 0px 5px 0px;
+    height: 250px;
   }
 
   .menu-section {

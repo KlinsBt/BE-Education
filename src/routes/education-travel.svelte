@@ -21,7 +21,7 @@
         <Navbar />
         <div class="title"> 
             <div>
-                <h1 style="text-shadow: 1px 1px 0px white;">UK Academic Programmes</h1>
+                <h1 style="text-shadow: 1px 1px 0px white;">Education Travel</h1>
             </div>
         </div>
 

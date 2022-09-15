@@ -21,7 +21,7 @@
         <Header />
         <Navbar />
         <div class="title"> 
-            <h1>Our Private and Corporate BE Courses</h1>
+            <h1>Our Corporate BE Courses</h1>
         </div>
 
         <div class="comp">
