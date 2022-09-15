@@ -69,7 +69,7 @@
       <br/>
       <br/>
       <hr/>
-      <p id="price">Price per person: <strong>€333</strong></p>
+      <p id="price">Price per person: <strong>€265</strong></p>
       <p>Total hours for 4 weeks: <strong>48h</strong></p>
 
 

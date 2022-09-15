@@ -60,7 +60,7 @@ export let background
                                     </li>
                                 <li>
                                     <p>Price per person:</p>
-                                    <h3>333€</h3>
+                                    <h3>265€</h3>
                                 </li>
                                 <li>
                                     <p>Total hours for 4 weeks:</p>
