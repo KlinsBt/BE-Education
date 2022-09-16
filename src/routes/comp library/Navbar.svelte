@@ -111,9 +111,9 @@ const stickToTop = () => {
                 <li><a href="/courses">BE Courses</a></li>
                 <li><a href="/corporate">Corporate Clients</a>
                   <ul class="dropdown">
-                    <li><a href="/">Translation</a></li>
-                    <li><a href="/">Interpretation</a></li>
-                    <li><a href="/">Company Courses</a></li>
+                    <li><a href="/coming-soon">Translation</a></li>
+                    <li><a href="/coming-soon">Interpretation</a></li>
+                    <li><a href="/coming-soon">Company Courses</a></li>
                   </ul>
                 </li>
                 <li><a href="/education-travel">Education Travel</a></li>
@@ -154,9 +154,9 @@ const stickToTop = () => {
           <li><a href="/courses">BE Courses</a></li>
           <li><a href="/corporate">Corporate Clients</a></li>
           <div class="dropdown-corporate-clients">
-            <a href="/">Translation</a>
-            <a href="/">Interpretation</a>
-            <a href="/">Company Courses</a>
+            <a href="/coming-soon">Translation</a>
+            <a href="/coming-soon">Interpretation</a>
+            <a href="/coming-soon">Company Courses</a>
           </div>
           <li><a href="/education-travel">Education Travel</a></li>
           <li><a href="/about-us">About Us</a></li>
